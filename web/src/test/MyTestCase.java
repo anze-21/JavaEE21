@@ -1,6 +1,7 @@
 package test;
 
 import dao.UserDao;
+import org.junit.Assert;
 import org.junit.Test;
 
 public class MyTestCase {
@@ -8,8 +9,7 @@ public class MyTestCase {
     @Test
     public void testCount(){
         //断言
-
-    Assert.assertEquals(new Long(11),userDao.count());
+        Assert.assertEquals(new Long(11),userDao.count());
 
 
 
